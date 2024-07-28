@@ -4,13 +4,16 @@ import App from "./App.jsx";
 import "./index.css";
 import { AuthContextProvider } from "./context/AuthContext.jsx";
 import { ChatContextProvider } from "./context/ChatContext.jsx";
+import {  RespContextProvider } from "./context/RespContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <AuthContextProvider>
-    <ChatContextProvider>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </ChatContextProvider>
-  </AuthContextProvider>,
+  <React.StrictMode>
+    <AuthContextProvider>
+      <ChatContextProvider>
+        <RespContextProvider>
+          <App />
+        </RespContextProvider>
+      </ChatContextProvider>
+    </AuthContextProvider>
+  </React.StrictMode>,
 );
