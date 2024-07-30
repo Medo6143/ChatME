@@ -9,10 +9,9 @@ export const Chats = () => {
   const [chats, setChats] = useState([]);
   const { currentUser } = useContext(AuthContext);
   const { dispatch } = useContext(ChatContext);
-  const {resp, setResp} = useContext(RespContext);
-  
-  useEffect(() => {
+  const { resp, setResp } = useContext(RespContext);
 
+  useEffect(() => {
     const getChats = () => {
       const unsub = onSnapshot(doc(db, "userChats", currentUser.uid), (doc) => {
         setChats(doc.data()); // Fixed error here
@@ -40,7 +39,6 @@ export const Chats = () => {
             <div
               key={chat[0]}
               onClick={() => handleSelect(chat[1].userInfo)}
-              
               className="flex items-center cursor-pointer hover:bg-[#2a2a54] p-4 transition-all delay-100 w-full"
             >
               <img

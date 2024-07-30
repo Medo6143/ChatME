@@ -95,7 +95,7 @@ export const Input = () => {
   };
 
   return (
-    <div className="flex justify-center align-middle w-full h-20 p-3">
+    <div className="flex justify-center align-middle w-full h-20 p-3 ">
       <input
         type="text"
         placeholder="Write Message...."
