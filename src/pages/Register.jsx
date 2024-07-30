@@ -61,7 +61,7 @@ export const Register = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+      <div className="bg-white bg-opacity-50 p-8 rounded shadow-md w-full max-w-md">
         <h1 className="text-center text-2xl font-bold tracking-tight">
           ChatME
         </h1>

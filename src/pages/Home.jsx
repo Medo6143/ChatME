@@ -3,7 +3,7 @@ import { Chat } from "../componant/Chat";
 
 export const Home = () => {
   return (
-    <div className="flex ">
+    <div className="flex">
       <SideBar />
       <Chat />
     </div>

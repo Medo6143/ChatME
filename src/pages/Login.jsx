@@ -23,7 +23,7 @@ export const Login = () => {
 
   return (
     <div
-      className="w-full bg-blue-400 h-screen flex justify-center items-center flex-wrap "
+      className="w-full bg-blue-400  h-screen flex justify-center items-center flex-wrap "
       style={{
         backgroundImage:
           'url("https://img.freepik.com/free-vector/colorful-3d-background_23-2148484152.jpg")',
@@ -31,7 +31,7 @@ export const Login = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+      <div className="bg-white bg-opacity-50 p-8 rounded shadow-md w-full max-w-md">
         <h1
           className="text-center text-2xl font-bold tracking-widest"
           style={{ letterSpacing: "0.1em", textShadow: "2px 2px 4px blue" }}
